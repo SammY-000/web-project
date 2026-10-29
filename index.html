@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aurelia &amp; Thorne — Wands &amp; Curios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient and interactive background layers -->
+  <div class="veil"></div>
+  <div class="glow"></div>
+  <canvas id="fx"></canvas>
+  <div class="orb" id="orb"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a class="logo" href="#home">✦ Wonderland </a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#craft">Our Craft</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><span class="bag">Satchel <b id="count">0</b></span></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="eyebrow">Est. in a candlelit alley</div>
+    <h1>Wands, Curios<br>&amp; Quiet Magic</h1>
+    <p class="lead">The dark hides everything worth finding. Move your light and see what the shop has been keeping for you.</p>
+    <a class="btn" href="#products">Enter the Emporium</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>The Collection</h2>
+    <p class="sub">Each piece is hand-finished and bound to its owner.</p>
+    <div class="grid" id="grid">
+      <!-- Products will be injected here by JavaScript -->
+    </div>
+  </section>
+
+  <!-- About/Craft Section -->
+  <section id="craft">
+    <h2>Our Craft</h2>
+    <p class="sub">Optional lore: how every piece is made.</p>
+    <div class="two">
+      <div>
+        <p>Every wand begins as a branch gathered at dusk, seasoned for a full lunar year, then carved by hand. A core of silver thread and ember-dust is set inside, and the grip is sealed with beeswax and a whispered vow.</p>
+        <br>
+        <p>We never sell the same wand twice. If it chooses you, it is yours.</p>
+      </div>
+      <div class="grid" style="grid-template-columns: 1fr 1fr;">
+        <div>
+          <div class="stat">412</div>
+          <p>Moons of practice</p>
+        </div>
+        <div>
+          <div class="stat">9</div>
+          <p>Rare woods</p>
+        </div>
+        <div>
+          <div class="stat">1</div>
+          <p>Wand per soul</p>
+        </div>
+        <div>
+          <div class="stat">∞</div>
+          <p>Candles burned</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Send an Owl</h2>
+    <p class="sub">Questions, commissions, or a wand that refuses to behave.</p>
+    <div class="two">
+      <div>
+        <input id="guest-name" placeholder="Your name">
+        <input id="guest-email" placeholder="Your email">
+        <textarea id="guest-message" rows="5" placeholder="Your message"></textarea>
+        <button class="btn" id="send-button" style="margin-top: 0;">Send the owl</button>
+        <p id="form-status" style="color: var(--gold); margin-top: 14px;"></p>
+      </div>
+      <div>
+        <p>Open from dusk until the last candle gutters.</p>
+        <br>
+        <p style="color: var(--mut);">
+          magicalwonder@aurelia-thorne.com<br>
+          Lantern Lane, behind the old clock tower
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Aurelia &amp; Thorne. Mischief managed.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
